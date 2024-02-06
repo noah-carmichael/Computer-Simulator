@@ -1,5 +1,5 @@
 # Computer-Simulator
-A computer simulator built with Swing
+A computer simulator built with Swing running on the fictional OS "Macrohard Bindows 10.5"
 
 By default, your username is "username" (case-insensitive) and your password is "password" (case-sensitive)
 

@@ -157,9 +157,12 @@ public class Main extends javax.swing.JFrame {
 
         // if virus is true, change the wallpaper to be infected
         if (virus == true) {
-            File virusWall = new File("src\\main\\resources\\graphics\\infectedWallpaper1.png");
             try {
-                ImageIcon infectedIcon = new ImageIcon(ImageIO.read(virusWall));
+                java.net.URL imgURL = getClass().getResource("/graphics/infectedWallpaper1.png");
+                if (imgURL == null) {
+                    throw new IOException("Resource not found: /graphics/infectedWallpaper1.png");
+                }
+                ImageIcon infectedIcon = new ImageIcon(ImageIO.read(imgURL));
                 background.setIcon(infectedIcon);
             } catch (IOException | IllegalArgumentException e) {
                 e.printStackTrace();
@@ -1396,8 +1399,8 @@ public class Main extends javax.swing.JFrame {
                 appAntivirus.setVisible(false);
 
                 virusFrame.setVisible(true);
-                File virusWall = new File("src\\main\\resources\\graphics\\infectedWallpaper1.png");
                 try {
+                    File virusWall = new File("src/main/resources/graphics/infectedWallpaper1.png");
                     ImageIcon infectedIcon = new ImageIcon(ImageIO.read(virusWall));
                     background.setIcon(infectedIcon);
                 } catch (IOException | IllegalArgumentException j) {

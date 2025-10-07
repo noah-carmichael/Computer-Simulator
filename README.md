@@ -3,10 +3,10 @@ A computer simulator built with Swing running on the fictional OS "Macrohard Bin
 
 Maven is required
 
-Easiest way to run is:
-mvn clean compile
-mvn exec:java
-mvn exec:java -Dexec.mainClass="com.mycompany.fpt.Start"
+Easiest way to run is:  
+mvn clean compile  
+mvn exec:java  
+mvn exec:java -Dexec.mainClass="com.mycompany.fpt.Start"  
 
 By default, your username is "username" (case-insensitive) and your password is "password" (case-sensitive)
 

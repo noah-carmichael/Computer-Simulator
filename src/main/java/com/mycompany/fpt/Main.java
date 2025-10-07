@@ -34,7 +34,7 @@ public class Main extends javax.swing.JFrame {
     private long lastClickTime5 = 0;
     public boolean virus = false;
     public String saveText;
-    public String wallpaperPath;
+    public String wallpaperPath = "";
     public Color PURPLE = new Color(255, 102, 102);
 
     public Main() {
